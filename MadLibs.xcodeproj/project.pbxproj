@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		966569581E7CA153004F5478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569571E7CA153004F5478 /* AppDelegate.swift */; };
-		9665695A1E7CA153004F5478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569591E7CA153004F5478 /* ViewController.swift */; };
+		9665695A1E7CA153004F5478 /* MadLibsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569591E7CA153004F5478 /* MadLibsViewController.swift */; };
 		9665695D1E7CA153004F5478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9665695B1E7CA153004F5478 /* Main.storyboard */; };
 		9665695F1E7CA153004F5478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9665695E1E7CA153004F5478 /* Assets.xcassets */; };
 		966569621E7CA153004F5478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966569601E7CA153004F5478 /* LaunchScreen.storyboard */; };
 		9665696D1E7CA153004F5478 /* MadLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665696C1E7CA153004F5478 /* MadLibsTests.swift */; };
 		966569781E7CA153004F5478 /* MadLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569771E7CA153004F5478 /* MadLibsUITests.swift */; };
+		966569861E7CA8F6004F5478 /* ComposeMadLibsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569851E7CA8F6004F5478 /* ComposeMadLibsViewController.swift */; };
+		966569881E7CA95B004F5478 /* ComposeMadLibsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966569871E7CA95B004F5478 /* ComposeMadLibsDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		966569541E7CA153004F5478 /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966569571E7CA153004F5478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		966569591E7CA153004F5478 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		966569591E7CA153004F5478 /* MadLibsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsViewController.swift; sourceTree = "<group>"; };
 		9665695C1E7CA153004F5478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9665695E1E7CA153004F5478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966569611E7CA153004F5478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		966569731E7CA153004F5478 /* MadLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966569771E7CA153004F5478 /* MadLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsUITests.swift; sourceTree = "<group>"; };
 		966569791E7CA153004F5478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966569851E7CA8F6004F5478 /* ComposeMadLibsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeMadLibsViewController.swift; sourceTree = "<group>"; };
+		966569871E7CA95B004F5478 /* ComposeMadLibsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeMadLibsDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				966569571E7CA153004F5478 /* AppDelegate.swift */,
-				966569591E7CA153004F5478 /* ViewController.swift */,
+				966569591E7CA153004F5478 /* MadLibsViewController.swift */,
 				9665695B1E7CA153004F5478 /* Main.storyboard */,
+				966569851E7CA8F6004F5478 /* ComposeMadLibsViewController.swift */,
+				966569871E7CA95B004F5478 /* ComposeMadLibsDelegate.swift */,
 				9665695E1E7CA153004F5478 /* Assets.xcassets */,
 				966569601E7CA153004F5478 /* LaunchScreen.storyboard */,
 				966569631E7CA153004F5478 /* Info.plist */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9665695A1E7CA153004F5478 /* ViewController.swift in Sources */,
+				966569881E7CA95B004F5478 /* ComposeMadLibsDelegate.swift in Sources */,
+				966569861E7CA8F6004F5478 /* ComposeMadLibsViewController.swift in Sources */,
+				9665695A1E7CA153004F5478 /* MadLibsViewController.swift in Sources */,
 				966569581E7CA153004F5478 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
